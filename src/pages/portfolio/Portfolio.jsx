@@ -1,37 +1,27 @@
-import { portfolio } from '../../Data';
-import { RiLink } from 'react-icons/ri';
-import './portfolio.css'
+import { portfolio } from "../../Data";
+import { Link } from "react-router";
+import "./portfolio.css";
 
 const Portfolio = () => {
   return (
-    <section className='portfolio section'>
-      <h2 className='section-title'>
+    <section className="portfolio section">
+      <h2 className="section-title">
         My <span>Portfolio</span>
       </h2>
 
-      <div className='portfolio-container container grid'>
-        {portfolio.map(({ id, img, title, description, skills, link }) => {
+      <div className="portfolio-container container grid">
+        {portfolio.map(({ id, img, title, description }) => {
           return (
-            <article className='portfolio-card' key={id}>
-              <a href={`/portfolio/painting/${id}`} className='portfolio-img-wrapper'>
-                <img src={img} alt='' className='portfolio-img' />
-              </a>
+            <article className="portfolio-card" key={id}>
+              <Link
+                to={`/portfolio/painting/${id}`}
+                className="portfolio-img-wrapper"
+              >
+                <img src={img} alt="" className="portfolio-img" />
+              </Link>
 
-              <h3 className='portfolio-title'>{title}</h3>
-              <p className='portfolio-description'>{description}</p>
-
-              <div className='portfolio-skills'>
-                {skills.map((skill, index) => {
-                  return (
-                    <img src={skill} className='portfolio-skill' key={index} />
-                  );
-                })}
-              </div>
-
-              <a href={`/portfolio/painting/${id}`} className='portfolio-link'>
-                <RiLink className='link-icon' />
-                Visit Project
-              </a>
+              <h3 className="portfolio-title">{title}</h3>
+              <p className="portfolio-description">{description}</p>
             </article>
           );
         })}

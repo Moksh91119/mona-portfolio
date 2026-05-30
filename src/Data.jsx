@@ -273,8 +273,6 @@ export const portfolio = [
     title: 'Coffee Website',
     description:
       'Short description of the project that was carried out in this portfolio.',
-    skills: [skillsImg4, skillsImg5],
-    link: '',
   },
 
   {
@@ -283,8 +281,6 @@ export const portfolio = [
     title: 'Food Product Design',
     description:
       'Short description of the project that was carried out in this portfolio.',
-    skills: [skillsImg6, skillsImg7],
-    link: '',
   },
 
   {
@@ -293,8 +289,6 @@ export const portfolio = [
     title: 'Restaurant Landing Page',
     description:
       'Short description of the project that was carried out in this portfolio.',
-    skills: [skillsImg1, skillsImg2, skillsImg3],
-    link: '',
   },
 
   {
@@ -303,8 +297,6 @@ export const portfolio = [
     title: 'Barbershop Website',
     description:
       'Short description of the project that was carried out in this portfolio.',
-    skills: [skillsImg4, skillsImg5],
-    link: '',
   },
 
   {
@@ -313,8 +305,6 @@ export const portfolio = [
     title: 'Construction Landing Page',
     description:
       'Short description of the project that was carried out in this portfolio.',
-    skills: [skillsImg1, skillsImg2, skillsImg3],
-    link: '',
   },
 ];
 
