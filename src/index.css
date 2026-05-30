@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -14,7 +14,7 @@
   --white-color: hsl(var(--hue), 4%, 100%);
 
   /*========== Font family ==========*/
-  --body-font: 'Montserrat Alternates', sans-serif;
+  --body-font: "Montserrat Alternates", sans-serif;
 
   /*========== Font sizes ==========*/
   --h1-font-size: 3.5rem;
@@ -126,7 +126,7 @@ img {
 }
 
 .button::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-color: var(--first-color);
