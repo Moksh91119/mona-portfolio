@@ -2,6 +2,7 @@ import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Portfolio from './pages/portfolio/Portfolio';
 import Contact from './pages/contact/Contact';
+import Painting from './pages/painting/Painting';
 import AppLayout from './components/AppLayout';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 
@@ -30,6 +31,11 @@ const App = () => {
           path: '/contact',
           element: <Contact />,
         },
+
+        {
+          path: '/portfolio/painting/:paintingId',
+          element: <Painting />,
+        }
       ],
     },
   ]);

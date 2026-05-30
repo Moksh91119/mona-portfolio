@@ -13,7 +13,7 @@ const Portfolio = () => {
         {portfolio.map(({ id, img, title, description, skills, link }) => {
           return (
             <article className='portfolio-card' key={id}>
-              <a href={link} className='portfolio-img-wrapper'>
+              <a href={`/portfolio/painting/${id}`} className='portfolio-img-wrapper'>
                 <img src={img} alt='' className='portfolio-img' />
               </a>
 
@@ -28,7 +28,7 @@ const Portfolio = () => {
                 })}
               </div>
 
-              <a href={link} className='portfolio-link'>
+              <a href={`/portfolio/painting/${id}`} className='portfolio-link'>
                 <RiLink className='link-icon' />
                 Visit Project
               </a>
