@@ -1,0 +1,33 @@
+.painting-container {
+  grid-template-columns: 7.25fr 4.75fr;
+  gap: 2rem clamp(2rem, -2rem + 3vw, 10rem);
+  padding: 2.5rem;
+}
+
+.painting-img {
+  width: 100%;
+  height: auto;
+}
+
+.painting-img-wrapper {
+  overflow: hidden;
+  display: block;
+}
+
+.painting-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  padding: 0.5rem;
+  gap: 1.5rem;
+}
+
+.painting-description {
+  white-space: pre-line;
+}
+
+.painting-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

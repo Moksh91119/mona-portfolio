@@ -269,6 +269,11 @@ img {
     padding: 1.5rem;
   }
 
+  .painting-container {
+    grid-template-columns: 7fr 5fr;
+    padding: 1.5rem;
+  }
+
   .stats {
     gap: 1.25rem;
   }
@@ -305,7 +310,8 @@ img {
 /* For medium devices */
 @media screen and (max-width: 1024px) {
   .home-container,
-  .contact-form-group {
+  .contact-form-group,
+  .painting-container {
     grid-template-columns: 1fr;
   }
 
