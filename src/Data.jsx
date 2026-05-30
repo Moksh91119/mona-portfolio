@@ -57,22 +57,22 @@ export const links = [
 export const personalInfo = [
   {
     title: "First Name : ",
-    description: "Steve",
+    description: "Mona",
   },
 
   {
     title: "Last Name : ",
-    description: "Milner",
+    description: "Jain",
   },
 
   {
     title: "Age : ",
-    description: "27 Years",
+    description: "XX Years",
   },
 
   {
     title: "Nationality : ",
-    description: "Tunisian",
+    description: "Indian",
   },
 
   {
@@ -82,27 +82,27 @@ export const personalInfo = [
 
   {
     title: "Address : ",
-    description: "Tunis",
+    description: "Indore, India",
   },
 
   {
     title: "Phone : ",
-    description: "+21621184010",
+    description: "+91 12345 67890",
   },
 
   {
     title: "Email : ",
-    description: "you@mail.com",
+    description: "mona.jain@mail.com",
   },
 
   {
-    title: "Skype : ",
-    description: "steve.milner",
+    title: "Instagram : ",
+    description: "@monajain",
   },
 
   {
     title: "Langages : ",
-    description: "French, English",
+    description: "Hindi, English",
   },
 ];
 
