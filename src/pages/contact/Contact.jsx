@@ -1,8 +1,5 @@
 import {
-  RiMap2Line,
-  RiUser3Line,
   RiMailLine,
-  RiBook2Line,
   RiSendPlaneLine,
   RiHomeOfficeLine,
   RiPhoneLine,
@@ -121,13 +118,14 @@ const Contact = () => {
         <form action="" className="contact-form grid" onSubmit={sendEmail}>
           <div className="contact-form-group grid">
             <div className="contact-form-div">
-              <label htmlFor="" className="contact-form-label">
+              <label htmlFor="name" className="contact-form-label">
                 Your full Name <b>*</b>
               </label>
 
               <input
                 type="text"
                 name="name"
+                id="name"
                 onChange={handleChange}
                 value={formData.name}
                 className="contact-form-input"
@@ -135,13 +133,14 @@ const Contact = () => {
             </div>
 
             <div className="contact-form-div">
-              <label htmlFor="" className="contact-form-label">
+              <label htmlFor="email" className="contact-form-label">
                 Your Email Address <b>*</b>
               </label>
 
               <input
                 type="email"
                 name="email"
+                id="email"
                 onChange={handleChange}
                 value={formData.email}
                 className="contact-form-input"
@@ -150,13 +149,14 @@ const Contact = () => {
           </div>
 
           <div className="contact-form-div">
-            <label htmlFor="" className="contact-form-label">
+            <label htmlFor="subject" className="contact-form-label">
               Your Subject <b>*</b>
             </label>
 
             <input
               type="text"
               name="subject"
+              id="subject"
               onChange={handleChange}
               value={formData.subject}
               className="contact-form-input"
@@ -164,12 +164,13 @@ const Contact = () => {
           </div>
 
           <div className="contact-form-div">
-            <label htmlFor="" className="contact-form-label">
+            <label htmlFor="message" className="contact-form-label">
               Your Message <b>*</b>
             </label>
 
             <textarea
               name="message"
+              id="message"
               onChange={handleChange}
               value={formData.message}
               className="contact-form-input contact-form-area"

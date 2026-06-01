@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useParams, Link } from "react-router";
 import { portfolio } from "../../Data";
 import "./painting.css";
 import {
@@ -6,7 +6,6 @@ import {
   RiArrowLeftLongLine,
   RiArrowRightLongLine,
 } from "react-icons/ri";
-import { Link } from "react-router";
 
 const Painting = () => {
   const { paintingId } = useParams();

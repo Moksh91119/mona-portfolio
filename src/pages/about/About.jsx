@@ -1,10 +1,7 @@
 import Info from "../../components/Info";
-import Cv from "../../pdf/steve-cv.pdf";
-import { RiDownload2Line } from "react-icons/ri";
 import Stats from "../../components/Stats";
-import { skill } from "../../Data";
 import SkillsItem from "../../components/SkillsItem";
-import { resume } from "../../Data";
+import { resume, skill } from "../../Data";
 import ResumeItem from "../../components/ResumeItem";
 import "./about.css";
 
