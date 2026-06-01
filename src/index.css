@@ -152,6 +152,22 @@ img {
   place-items: center;
 }
 
+.link-button {
+  display: flex;
+  align-items: center;
+  color: var(--first-color);
+  padding: 1.25rem 2rem 1.25rem 2rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-600);
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
 .section {
   padding-block: 4rem;
 }

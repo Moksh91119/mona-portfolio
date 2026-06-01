@@ -1,3 +1,11 @@
+.painting-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-inline-start: clamp(3.5rem, 6vw, 6rem);
+  padding-inline-end: clamp(3.5rem, 6vw, 6rem);
+}
+
 .painting-container {
   grid-template-columns: 7.25fr 4.75fr;
   gap: 2rem clamp(2rem, -2rem + 3vw, 10rem);

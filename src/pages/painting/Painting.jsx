@@ -1,7 +1,11 @@
 import { useParams } from "react-router";
 import { portfolio } from "../../Data";
 import "./painting.css";
-import { RiArrowRightLine } from "react-icons/ri";
+import {
+  RiArrowRightLine,
+  RiArrowLeftLongLine,
+  RiArrowRightLongLine,
+} from "react-icons/ri";
 import { Link } from "react-router";
 
 const Painting = () => {
@@ -42,6 +46,29 @@ const Painting = () => {
 
   return (
     <section className="painting section">
+      <div className="painting-navigation">
+        <div className="prev-painting-section">
+          {previousPainting && (
+            <Link
+              to={`/portfolio/painting/${previousPainting.id}`}
+              className="link-button"
+            >
+              <RiArrowLeftLongLine /> <p> Prev</p>
+            </Link>
+          )}
+        </div>
+        <div className="next-painting-section">
+          {nextPainting && (
+            <Link
+              to={`/portfolio/painting/${nextPainting.id}`}
+              className="link-button"
+            >
+              <p>Next </p> <RiArrowRightLongLine />
+            </Link>
+          )}
+        </div>
+      </div>
+
       <h2 className="section-title">{painting?.title}</h2>
 
       <div className="painting-container container grid">
@@ -71,30 +98,6 @@ const Painting = () => {
               <RiArrowRightLine />
             </span>
           </Link>
-
-          {nextPainting && (
-            <Link
-              to={`/portfolio/painting/${nextPainting.id}`}
-              className="button portfolio-button"
-            >
-              Next painting
-              <span className="button-icon">
-                <RiArrowRightLine />
-              </span>
-            </Link>
-          )}
-
-          {previousPainting && (
-            <Link
-              to={`/portfolio/painting/${previousPainting.id}`}
-              className="button portfolio-button"
-            >
-              Previous painting
-              <span className="button-icon">
-                <RiArrowRightLine />
-              </span>
-            </Link>
-          )}
         </div>
       </div>
     </section>
